@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bedroom"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+     <ImageView
+         android:id="@+id/torsher2"
+         android:layout_width="140dp"
+         android:layout_height="400dp"
+         android:src="@drawable/torsher" android:layout_alignTop="@+id/torsher" android:layout_toRightOf="@+id/bed"
+         android:layout_toEndOf="@+id/bed"/>
+
+     <ImageView
+         android:id="@+id/torsher"
+         android:layout_width="140dp"
+         android:layout_height="400dp"
+         android:src="@drawable/torsher"
+         android:layout_alignTop="@+id/paintbedroom" android:layout_toLeftOf="@+id/bed" android:layout_toStartOf="@+id/bed"
+         android:layout_marginTop="111dp"/>
+
+     <ImageView
+         android:id="@+id/paintbedroom"
+         android:layout_width="300dp"
+         android:layout_height="300dp"
+         android:onClick="hackSafe"
+         android:src="@drawable/paintbedroom" android:layout_above="@+id/bed" android:layout_centerHorizontal="true"/>
+
+
+    <Button
+            android:id="@+id/rights"
+            style="@style/AppTheme"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="gorightfrombedroom"
+            android:background="@drawable/rightsp" android:layout_alignTop="@+id/lefts" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    <Button
+            android:id="@+id/lefts"
+            style="@style/AppTheme"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="goleftfrombedroom"
+            android:background="@drawable/leftsp"
+            android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+     <ImageView
+         android:id="@+id/bed"
+         android:layout_width="400dp"
+         android:layout_height="300dp"
+         android:onClick="tosleep"
+         android:src="@drawable/bed"
+         android:layout_alignTop="@+id/lefts" android:layout_centerHorizontal="true"/>
+
+    <ImageView android:layout_width="450dp"
+              android:layout_height="550dp"
+              android:id="@+id/stinkieBedroom"
+              android:src="@drawable/stinkie"
+               android:layout_below="@+id/paintbedroom" android:layout_centerHorizontal="true"/>
+
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:name="com.katesproject.stinkie.IndicatsFragment" android:id="@+id/fragment3"
+              tools:layout="@layout/indicatsfrag_layout" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:name="com.katesproject.stinkie.MoneyFragment" android:id="@+id/fragment2"
+              tools:layout="@layout/moneyfrag" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

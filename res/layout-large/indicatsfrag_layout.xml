@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:orientation="vertical"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:weightSum="1">
+
+
+        <ProgressBar
+                android:id="@+id/foodprogbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminate="false"
+                android:max="60"
+                android:progressDrawable="@drawable/foodprogbar" android:layout_alignParentTop="true"
+                android:layout_toLeftOf="@+id/healthprogbar"/>
+        <ProgressBar
+                android:id="@+id/healthprogbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminate="false"
+                android:max="60"
+                android:progressDrawable="@drawable/healthprogbar"
+                android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/moodprogbar"/>
+
+        <ProgressBar
+                android:id="@+id/moodprogbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminate="false"
+                android:max="60"
+                android:progressDrawable="@drawable/moodprogbar"
+
+                android:layout_alignParentTop="true" android:layout_toLeftOf="@+id/pointprogbar"/>
+        <ProgressBar
+                android:id="@+id/pointprogbar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminate="false"
+                android:max="60"
+                android:progressDrawable="@drawable/pointprogbarx"
+                 android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

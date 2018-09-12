@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@drawable/background_bb" android:id="@+id/bb_last">
+
+  <com.katesproject.stinkie.LinesView
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/linesgame"
+            android:layout_gravity="center_horizontal|top" android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true" android:layout_alignParentStart="true"
+            android:visibility="visible"/>
+    <ImageView
+            android:id="@+id/win1"
+            android:layout_width="500dp"
+            android:layout_height="250dp"
+            android:src="@drawable/win1" android:visibility="invisible"
+            android:layout_marginTop="49dp"
+            android:layout_alignParentTop="true" android:layout_alignLeft="@+id/gettedscores"
+            android:layout_alignStart="@+id/gettedscores"/>
+    <ImageView
+            android:layout_width="500dp"
+            android:layout_height="160dp"
+            android:id="@+id/gettedscores"
+            android:src="@drawable/scoresgettedimg"
+            android:visibility="invisible"
+            android:layout_below="@+id/win1" android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:layout_width="500dp"
+            android:layout_height="160dp"
+            android:id="@+id/recordscores"
+            android:src="@drawable/scorerecordimg"
+            android:visibility="invisible"
+            android:layout_below="@+id/gettedscores" android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/backlines"
+            android:layout_width="450dp"
+            android:layout_height="300dp"
+            android:onClick="backgame"
+            android:background="@drawable/backlines"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="109dp"/>
+
+
+    <TextView
+            android:id="@+id/scoreView"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="0"
+            android:textStyle="italic"
+            android:textColor="#66CDAA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible"
+            android:textSize="50sp"
+            android:layout_above="@+id/recordscores" android:layout_alignRight="@+id/gettedscores"
+            android:layout_alignEnd="@+id/gettedscores" android:layout_marginBottom="46dp"/>
+    <TextView
+            android:id="@+id/scoreRView"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:text="0"
+            android:textStyle="italic"
+            android:textColor="#20B2AA"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:visibility="invisible"
+            android:layout_marginBottom="43dp" android:textSize="50sp" android:layout_alignBottom="@+id/recordscores"
+            android:layout_alignRight="@+id/recordscores" android:layout_alignEnd="@+id/recordscores"/>
+
+</RelativeLayout>

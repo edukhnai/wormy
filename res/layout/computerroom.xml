@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/computerroom"
+        android:background="@drawable/comproom">
+
+    <ImageView
+            android:layout_width="205dp"
+            android:layout_height="145dp"
+            android:id="@+id/computertable"
+            android:src="@drawable/computertable"
+            android:layout_marginLeft="22dp" android:layout_marginStart="22dp"
+            android:layout_alignBottom="@+id/compchair" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+    <ImageView
+            android:layout_width="105dp"
+            android:layout_height="165dp"
+            android:id="@+id/compchair"
+            android:src="@drawable/compchair"
+            android:layout_alignTop="@+id/lefts" android:layout_alignRight="@+id/computertable"
+            android:layout_alignEnd="@+id/computertable" android:layout_marginTop="15dp"/>
+    <ImageView
+            android:layout_width="175dp"
+            android:layout_height="10dp"
+            android:id="@+id/bookshelf"
+            android:src="@drawable/bookshelf"
+            android:layout_alignBottom="@+id/books" android:layout_alignLeft="@+id/computertable"
+            android:layout_alignStart="@+id/computertable"/>
+    <ImageView
+            android:layout_width="130dp"
+            android:layout_height="70dp"
+            android:id="@+id/books"
+            android:src="@drawable/books"
+            android:layout_below="@+id/fragment3" android:layout_toLeftOf="@+id/calendar"
+            android:layout_toStartOf="@+id/calendar"/>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:id="@+id/computer"
+            android:src="@drawable/computer"
+            android:layout_alignTop="@+id/relativeLayout" android:layout_alignLeft="@+id/books"
+            android:layout_alignStart="@+id/books"/>
+    <ImageView
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/calendar"
+            android:src="@drawable/calendar"
+            android:layout_above="@+id/compchair" android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:id="@+id/comptree"
+            android:src="@drawable/comptree"
+            android:layout_below="@+id/fragment3" android:layout_alignRight="@+id/rights"
+            android:layout_alignEnd="@+id/rights"/>
+    <ViewFlipper
+            android:layout_width="87dp"
+            android:layout_height="65dp"
+            android:id="@+id/desktopflipper"
+            android:layout_alignTop="@+id/computer" android:layout_alignLeft="@+id/computer"
+            android:layout_alignStart="@+id/computer" android:layout_marginLeft="6dp" android:layout_marginStart="6dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dsktp1"
+                android:id="@+id/dsktp1"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dsktp2"
+                android:id="@+id/dsktp2"/>
+         <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dsktp3"
+                android:id="@+id/dsktp3"/>
+          <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dsktp4"
+                android:id="@+id/dsktp4"/>
+           <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/dsktp5"
+                android:id="@+id/dsktp5"/>
+    </ViewFlipper>
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:name="com.katesproject.stinkie.IndicatsFragment" android:id="@+id/fragment3"
+              tools:layout="@layout/indicatsfrag_layout" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+    <fragment android:layout_width="120dp"
+              android:layout_height="70dp"
+              android:name="com.katesproject.stinkie.MoneyFragment" android:id="@+id/fragment2"
+              tools:layout="@layout/moneyfrag" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true" android:textColor="@color/ruColor"/>
+    <Button
+            android:id="@+id/lefts"
+            style="@style/AppTheme"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="goleftfromcomputerroom"
+            android:background="@drawable/leftsp"
+            android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <Button
+            android:id="@+id/rights"
+            style="@style/AppTheme"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="gorightfromcomputerroom"
+            android:background="@drawable/rightsp"
+            android:layout_alignTop="@+id/lefts" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <ImageView
+            android:id="@+id/stinkieComputerroom"
+            android:src="@drawable/stinkie"
+            android:layout_width="200dp"
+            android:layout_height="280dp"
+            android:layout_below="@+id/calendar" android:layout_toLeftOf="@+id/rights"
+            android:layout_toStartOf="@+id/rights"/>
+    <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="55dp"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/calendar" android:layout_alignLeft="@+id/calendar"
+            android:layout_alignStart="@+id/calendar" android:id="@+id/relativeLayout">
+        <TextView
+                android:layout_width="55dp"
+                android:layout_height="20dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="13"
+                android:id="@+id/daytoday"
+                android:textSize="17sp"
+                android:textColor="@color/seaLinkColor"
+                android:gravity="center"
+                android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+        <TextView
+                android:layout_width="55dp"
+                android:layout_height="15dp"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/sept"
+                android:id="@+id/monthtoday"
+                android:gravity="center"
+                android:textSize="10sp"
+                android:layout_below="@+id/daytoday" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+</RelativeLayout>

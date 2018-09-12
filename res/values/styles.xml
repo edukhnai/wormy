@@ -1,0 +1,62 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="Theme.Base.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+<style name="ActionBar.Solid.GreenStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+    <item name="android:background">@android:color/holo_green_dark</item>
+</style>
+    <style name="ActionBar.Solid.WhStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid">
+        <item name="android:background">@android:color/holo_blue_light</item>
+    </style>
+
+    <color name="whiteColor">#FFFAF0</color>
+    <color name="ruColor">#2E8B57</color>
+    <color name="seaColor">#FFC125</color>
+    <color name="richColor">#8B1A1A</color>
+    <color name="ruLinkColor">#EE2C2C</color>
+    <color name="seaLinkColor">#8B658B</color>
+    <color name="richLinkColor">#838B8B</color>
+    <color name="ruTxtColor">#000000</color>
+    <color name="seaTxtColor">#8B0A50</color>
+    <color name="richTxtColor">#27408B</color>
+    <color name="skyBlue">#87CEEB</color>
+    <color name="checkrus">#556B2F</color>
+
+
+    <style name="Banner">
+
+    <item name="android:textSize">30sp</item>
+
+    <item name="android:textColor">#ffe08040</item>
+
+    <item name="android:paddingLeft">4dp</item>
+
+</style>
+
+
+    <style name="Scores">
+
+    <item name="android:textSize">30sp</item>
+
+    <item name="android:textColor">#ffe08040</item>
+
+    <item name="android:paddingLeft">4dp</item>
+
+</style>
+
+</resources>

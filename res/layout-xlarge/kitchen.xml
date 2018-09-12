@@ -1,0 +1,376 @@
+<?xml version="1.0"?>
+
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/kitchen"
+    android:gravity="top"
+                android:id="@+id/kitchen"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/chair"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:src="@drawable/chair"
+        android:layout_centerVertical="true" android:layout_alignLeft="@+id/phone"
+        android:layout_alignStart="@+id/phone" android:layout_marginLeft="36dp" android:layout_marginStart="36dp"/>
+
+    <ImageView
+            android:id="@+id/kitchtable"
+            android:layout_width="250dp"
+            android:layout_height="270dp"
+            android:src="@drawable/kichtable"
+            android:layout_alignTop="@+id/rights" android:layout_toRightOf="@+id/foodflip"
+            android:layout_toEndOf="@+id/foodflip"/>
+
+    <ImageView
+        android:id="@+id/fridge"
+        android:layout_width="220dp"
+        android:layout_height="450dp"
+        android:onClick="wanttoeat"
+        android:src="@drawable/fridge"
+        android:layout_alignTop="@+id/shout" android:layout_toLeftOf="@+id/ffb2" android:layout_toStartOf="@+id/ffb2"/>
+
+
+
+    <Button
+        android:id="@+id/lefts"
+        style="@style/AppTheme"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:onClick="goleftfromkitch"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:background="@drawable/leftsp" />
+
+    <Button
+            android:id="@+id/rights"
+            style="@style/AppTheme"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:onClick="gorightfromkitch"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:background="@drawable/rightsp" android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+    <ImageView
+        android:id="@+id/shout"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:src="@drawable/shout"
+        android:layout_above="@+id/chair" android:layout_alignLeft="@+id/rightff"
+        android:layout_alignStart="@+id/rightff"/>
+    <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:id="@+id/phone"
+            android:src="@drawable/phone"
+            android:layout_below="@+id/shout" android:layout_alignRight="@+id/shout"
+            android:layout_alignEnd="@+id/shout" android:layout_marginRight="27dp" android:layout_marginEnd="27dp"/>
+    <fragment
+        android:id="@+id/fragment3"
+        android:name="com.katesproject.stinkie.IndicatsFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout="@layout/indicatsfrag_layout" android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/fragment2" android:layout_toEndOf="@+id/fragment2"/>
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.katesproject.stinkie.MoneyFragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        tools:layout="@layout/moneyfrag" />
+    <ImageView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:id="@+id/ffb2"
+            android:src="@drawable/ffb2"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"/>
+    <Button
+        android:id="@+id/leftff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/leftff"
+        android:visibility="invisible"
+        android:onClick="leftfood"
+        android:layout_alignTop="@+id/rightff" android:layout_toLeftOf="@+id/ffb2"
+        android:layout_toStartOf="@+id/ffb2"/>
+
+    <Button
+        android:id="@+id/rightff"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@drawable/rightff"
+        android:visibility="invisible"
+        android:onClick="rightfood"
+        android:layout_alignBottom="@+id/ffb2" android:layout_toRightOf="@+id/ffb2" android:layout_toEndOf="@+id/ffb2"
+        android:layout_marginBottom="33dp"/>
+
+    <ImageView android:layout_width="450dp"
+               android:layout_height="550dp"
+               android:id="@+id/stinkieKitchen"
+               android:src="@drawable/stinkie"
+               android:layout_alignTop="@+id/chair" android:layout_centerHorizontal="true"/>
+
+    <ViewFlipper
+            android:id="@+id/foodflip"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/ffb2" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="9dp">
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake1"
+                android:id="@+id/aboveflip0" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake2"
+                android:id="@+id/aboveflip1" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake3"
+                android:id="@+id/aboveflip2" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/kiwijuice"
+                android:id="@+id/aboveflip3" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/apricotjuice"
+                android:id="@+id/aboveflip4" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/applejuice"
+                android:id="@+id/aboveflip5" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/bananajuice"
+                android:id="@+id/aboveflip6" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cherryjuice"
+                android:id="@+id/aboveflip7" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cranberryjuice"
+                android:id="@+id/aboveflip8" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/orangejuice"
+                android:id="@+id/aboveflip9" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/pineapplejuice"
+                android:id="@+id/aboveflip10" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/pomegranatejuice"
+                android:id="@+id/aboveflip11" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/tomatoalljuice"
+                android:id="@+id/aboveflip12" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/bacon"
+                android:id="@+id/aboveflip13" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cheeze"
+                android:id="@+id/aboveflip14" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cruassan"
+                android:id="@+id/aboveflip15" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/jogurt"
+                android:id="@+id/aboveflip16" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/milk"
+                android:id="@+id/aboveflip17" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/mushrooms"
+                android:id="@+id/aboveflip18" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/picules"
+                android:id="@+id/aboveflip19" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/coctail1"
+                android:id="@+id/aboveflip20" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/coctail2"
+                android:id="@+id/aboveflip21" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/coctail3"
+                android:id="@+id/aboveflip22" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake4"
+                android:id="@+id/aboveflip23" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake5"
+                android:id="@+id/aboveflip24" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake6"
+                android:id="@+id/aboveflip25" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake7"
+                android:id="@+id/aboveflip26" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake8"
+                android:id="@+id/aboveflip27" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake9"
+                android:id="@+id/aboveflip28" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake10"
+                android:id="@+id/aboveflip29" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake11"
+                android:id="@+id/aboveflip30" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/cupcake12"
+                android:id="@+id/aboveflip31" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/grapejuice"
+                android:id="@+id/aboveflip32" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/honey"
+                android:id="@+id/aboveflip33" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/jam"
+                android:id="@+id/aboveflip34" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/jam2"
+                android:id="@+id/aboveflip35" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/krj"
+                android:id="@+id/aboveflip36" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/orangejuice2"
+                android:id="@+id/aboveflip37" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/tomatoes"
+                android:id="@+id/aboveflip38" android:layout_above="@+id/leftfo"
+                />
+        <ImageView
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                android:src="@drawable/water"
+                android:id="@+id/aboveflip39" android:layout_above="@+id/leftfo"
+                />
+    </ViewFlipper>
+
+
+
+</RelativeLayout>

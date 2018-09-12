@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+
+        <item
+                android:id="@+id/col01"
+                android:title="Ластик"/>
+        <item
+                android:id="@+id/col0"
+                android:title="Белый"/>
+        <item
+                android:id="@+id/col1"
+                android:title="Красный"/>
+        <item
+                android:id="@+id/col2"
+                android:title="Оранжевый"/>
+        <item
+                android:id="@+id/col3"
+                android:title="Желтый"/>
+        <item
+                android:id="@+id/col4"
+                android:title="Зеленый"/>
+        <item
+                android:id="@+id/col5"
+                android:title="Голубой"/>
+        <item
+                android:id="@+id/col6"
+                android:title="Синий"/>
+        <item
+                android:id="@+id/col7"
+                android:title="Фиолетовый"/>
+
+</menu>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.katesproject.stinkie"
+    android:versionCode="9"
+    android:versionName="2.5" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/imgfgpcircle"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppBaseTheme">
+        <receiver
+            android:name=".Receiver"
+            android:enabled="true"
+            android:permission="android.permission.RECEIVE_BOOT_COMPLETED" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".SplashScreen"
+            android:noHistory="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainMenuActivity"
+            android:label="@string/MainMenu"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".KitchenActivity"
+            android:label="@string/kitchen"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BathroomActivity"
+            android:label="@string/bathroom"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".BedroomActivity"
+            android:label="@string/bedroom"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GameroomActivity"
+            android:label="@string/gameroom"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".StreetActivity"
+            android:label="@string/street"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".WeardrobeActivity"
+            android:label="@string/weardrobe"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".LobbyActivity"
+            android:label="@string/lobby"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity android:name=".LinesActivityMain"
+                  android:label="@string/app_name"
+                  android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".DressingroomActivity"
+            android:label="@string/dressing"
+            android:screenOrientation="portrait" />
+        <activity
+                android:name=".ComputerroomActivity"
+                android:label="@string/computerroom"
+                android:screenOrientation="portrait" />
+        <activity
+            android:name=".HelpActivity"
+            android:label="@string/help"
+            android:screenOrientation="portrait" />
+        <activity
+                android:name=".AboutActivity"
+                android:label="@string/about"
+                android:screenOrientation="portrait" />
+        <activity
+                android:name=".AchivListActivity"
+                android:label="@string/achivs"
+                android:screenOrientation="portrait" />
+         <activity 
+             android:name="com.vk.sdk.VKOpenAuthActivity"/>
+        <service
+            android:name=".BackgroundSound"
+            android:enabled="true" >
+        </service>
+        <service
+            android:name=".TimerService"
+            android:enabled="true" >
+    </service>
+        <service android:name=".NotifyService"
+            android:enabled="true" ></service>
+     </application>
+        <supports-screens 
+            android:resizeable="true"
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"/>
+ 
+
+</manifest>

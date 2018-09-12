@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmenu"
+                android:id="@+id/mainmenu"
+    android:gravity="top"
+                android:clickable="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:background="@drawable/playruss"
+        android:clickable="true"
+        android:onClick="tolobby"
+        android:contentDescription="@+id/play"
+        android:layout_below="@+id/addName" android:layout_centerHorizontal="true" android:layout_marginTop="23dp"/>
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:onClick="toabout"
+        android:clickable="true"
+        android:contentDescription="@+id/options"
+        android:background="@drawable/aboutruss"
+        android:layout_below="@+id/play" android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:onClick="tohelp"
+        android:clickable="true"
+        android:contentDescription="@+id/help"
+        android:background="@drawable/helpruss"
+        android:layout_below="@+id/about" android:layout_alignLeft="@+id/about" android:layout_alignStart="@+id/about"/>
+
+    <Button
+            android:id="@+id/achiv"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:onClick="sa"
+            android:clickable="true"
+            android:contentDescription="@+id/achievements"
+            android:background="@drawable/achivrus"
+            android:layout_below="@+id/help" android:layout_alignLeft="@+id/help"
+            android:layout_alignStart="@+id/help"/>
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:onClick="exitWormy"
+        android:clickable="true"
+        android:contentDescription="@+id/exit"
+        android:background="@drawable/exitruss"
+        android:layout_below="@+id/achiv" android:layout_alignLeft="@+id/achiv" android:layout_alignStart="@+id/achiv"/>
+
+    <ImageView
+        android:id="@+id/russiangirl"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/about"
+        android:contentDescription="@+id/russiangirl"
+        android:onClick="hiuser"
+        android:src="@drawable/russiangirl" />
+    <TextView
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textColor="#2E8B57"
+            android:text="@string/hallo"
+            android:id="@+id/textname"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="19dp" android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+    <TextView
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/player"
+            android:id="@+id/addName"
+            android:onClick="nameUser"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#228B22"
+            android:textStyle="bold|italic"
+            android:layout_below="@+id/textname" android:layout_alignLeft="@+id/flower2"
+            android:layout_alignStart="@+id/flower2"/>
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:id="@+id/hallo0"
+            android:src="@drawable/wordsrr"
+            android:visibility="invisible"
+            android:layout_above="@+id/help" android:layout_toRightOf="@+id/play" android:layout_toEndOf="@+id/play"/>
+
+    <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/round1"
+            android:indeterminateOnly="true"
+            android:id="@+id/flower3"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_marginRight="18dp" android:layout_marginEnd="18dp"
+            android:layout_marginBottom="15dp"/>
+
+    <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:indeterminateDrawable="@drawable/round2"
+            android:indeterminateOnly="true"
+            android:id="@+id/flower1"
+            android:visibility="invisible"
+            android:layout_above="@+id/flower2" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_marginLeft="16dp" android:layout_marginStart="16dp"
+            android:layout_marginBottom="13dp"/>
+
+    <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateDrawable="@drawable/round5"
+            android:indeterminateOnly="true"
+            android:id="@+id/flower2"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/exit" android:layout_toLeftOf="@+id/play"
+            android:layout_toStartOf="@+id/play"/>
+
+    <CheckBox
+            android:layout_width="180dp"
+            android:layout_height="30dp"
+            android:text="@string/notifcheck"
+            android:textColor="#556B2F"
+            android:id="@+id/notifyCheck"
+            android:checked="true"
+            android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+</RelativeLayout>

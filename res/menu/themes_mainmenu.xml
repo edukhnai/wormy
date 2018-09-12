@@ -1,0 +1,29 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+            android:id="@+id/russiantheme"
+            android:orderInCategory="1"
+            android:showAsAction="always"
+            android:title="@string/russiant"
+            android:icon="@drawable/minstandart"
+            />
+
+    <item
+            android:id="@+id/seatheme"
+            android:orderInCategory="2"
+            android:showAsAction="always"
+            android:title="@string/girly"
+            android:icon="@drawable/mingirl"
+            />
+
+        <item
+                android:id="@+id/richtheme"
+                android:orderInCategory="3"
+                android:showAsAction="always"
+                android:title="@string/boyly"
+                android:icon="@drawable/minboy"
+                />
+
+
+
+</menu>

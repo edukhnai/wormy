@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@drawable/splsh"
+                android:gravity="top"
+                android:onClick="onPbButton"
+                tools:context="${relativePackage}.${activityClass}">
+
+    <ImageView
+            android:layout_width="250dp"
+            android:layout_height="400dp"
+            android:id="@+id/splashstinkie"
+            android:src="@drawable/splshstinkie"
+            android:layout_centerVertical="true" android:layout_toRightOf="@+id/yellowpoint"
+            android:layout_toEndOf="@+id/yellowpoint"/>
+
+    <ImageView
+            android:layout_width="90dp"
+            android:layout_height="120dp"
+            android:id="@+id/redpoint"
+            android:src="@drawable/redpoint"
+            android:visibility="invisible"
+            android:layout_above="@+id/pbView" android:layout_alignRight="@+id/yellowpoint"
+            android:layout_alignEnd="@+id/yellowpoint"/>
+
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/yellowpoint"
+            android:src="@drawable/yellowpoint"
+            android:visibility="invisible"
+            android:layout_below="@+id/greenpoint"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="49dp"/>
+
+
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/greenpoint"
+            android:src="@drawable/greenpoint"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/bluepoint"
+            android:src="@drawable/bluepoint"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/yellowpoint" android:layout_alignParentRight="true"/>
+
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/purplepoint"
+            android:src="@drawable/purplepoint"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true" android:layout_alignLeft="@+id/bluepoint"
+            android:layout_alignStart="@+id/bluepoint"/>
+    <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:progressDrawable="@drawable/splashprogbar"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:id="@+id/pbView"
+            android:max="100"
+            android:indeterminate="false"
+            android:layout_above="@+id/purplepoint" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="110sp"
+            android:layout_height="30sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/percent"
+            android:textSize="22sp"
+            android:id="@+id/percent"
+            android:layout_alignTop="@+id/pbView" android:layout_toRightOf="@+id/textView3"
+            android:layout_toEndOf="@+id/textView3"/>
+    <TextView
+            android:layout_width="170sp"
+            android:layout_height="30sp"
+            android:textSize="22sp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="@string/loading"
+            android:id="@+id/textView3"
+            android:layout_alignTop="@+id/pbView" android:layout_alignRight="@+id/greenpoint"
+            android:layout_alignEnd="@+id/greenpoint"/>
+    <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/message"
+            android:src="@drawable/clkforgo"
+            android:visibility="visible"
+            android:layout_below="@+id/greenpoint" android:layout_toLeftOf="@+id/purplepoint"/>
+
+
+
+</RelativeLayout>

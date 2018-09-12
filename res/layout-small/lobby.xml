@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/roomw"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/window"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="26dp"
+        android:src="@drawable/window"
+        android:layout_marginStart="26dp"
+        android:layout_above="@+id/lefts" android:layout_alignParentLeft="true" android:layout_alignParentStart="true"/>
+
+    <ImageView
+        android:id="@+id/flower"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:src="@drawable/flower" android:layout_above="@+id/lefts" android:layout_toRightOf="@+id/fragment2"
+        android:layout_toEndOf="@+id/fragment2"/>
+
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="50dp"
+              android:name="com.katesproject.stinkie.IndicatsFragment" android:id="@+id/fragment3"
+              tools:layout="@layout/indicatsfrag_layout" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+    <fragment android:layout_width="100dp"
+              android:layout_height="50dp"
+              android:name="com.katesproject.stinkie.MoneyFragment" android:id="@+id/fragment2"
+              tools:layout="@layout/moneyfrag" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/door"
+        android:layout_width="150dp"
+        android:layout_height="220dp"
+        android:onClick="goupfromintro"
+        android:src="@drawable/doorwcarpet"
+        android:layout_below="@+id/fragment3" android:layout_toRightOf="@+id/window"
+        android:layout_toEndOf="@+id/window" android:layout_marginLeft="21dp" android:layout_marginStart="21dp"/>
+
+    <ImageView android:layout_width="150dp"
+               android:layout_height="200dp"
+               android:id="@+id/stinkieLobby"
+               android:src="@drawable/stinkie"
+               android:layout_marginBottom="31dp" android:layout_alignParentBottom="true"
+               android:layout_centerHorizontal="true"/>
+
+    <Button
+            android:id="@+id/lefts"
+            style="@style/AppTheme"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="goleftfromintro"
+            android:background="@drawable/leftsp" />
+
+    <Button
+            android:id="@+id/rights"
+            style="@style/AppTheme"
+            android:layout_width="50dp"
+            android:layout_height="80dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="gorightfromintro"
+            android:background="@drawable/rightsp" android:layout_alignTop="@+id/lefts" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,448 @@
+# view res/layout/abc_action_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ActionMenuView { <init>(...); }
+
+# view res/layout/abc_expanded_menu_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ExpandedMenuView { <init>(...); }
+
+# view res/layout/abc_list_menu_item_layout.xml #generated:17
+# view res/layout/abc_popup_menu_item_layout.xml #generated:17
+-keep class android.support.v7.internal.view.menu.ListMenuItemView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:19
+# view res/layout/abc_action_bar_decor_include.xml #generated:47
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:29
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:52
+-keep class android.support.v7.internal.widget.ActionBarContainer { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:31
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:40
+# view res/layout/abc_action_mode_bar.xml #generated:19
+-keep class android.support.v7.internal.widget.ActionBarContextView { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarOverlayLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_decor_include.xml #generated:25
+# view res/layout/abc_action_bar_decor_overlay.xml #generated:35
+-keep class android.support.v7.internal.widget.ActionBarView { <init>(...); }
+
+# view res/layout/abc_action_bar_home.xml #generated:17
+-keep class android.support.v7.internal.widget.ActionBarView$HomeView { <init>(...); }
+
+# view res/layout/abc_action_bar_tabbar.xml #generated:17
+# view res/layout/abc_activity_chooser_view.xml #generated:19
+-keep class android.support.v7.internal.widget.LinearLayoutICS { <init>(...); }
+
+# view v11\res/layout-v11/abc_action_bar_decor.xml #generated:17
+# view v11\res/layout-v11/abc_simple_decor.xml #generated:17
+-keep class android.support.v7.internal.widget.NativeActionModeAwareLayout { <init>(...); }
+
+# view res/layout/abc_action_bar_tab.xml #generated:17
+-keep class android.support.v7.internal.widget.ScrollingTabContainerView$TabView { <init>(...); }
+
+# view res/layout/abc_search_view.xml #generated:85
+-keep class android.support.v7.widget.SearchView$SearchAutoComplete { <init>(...); }
+
+# view AndroidManifest.xml #generated:100
+-keep class com.katesproject.stinkie.AboutActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:104
+-keep class com.katesproject.stinkie.AchivListActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:110
+-keep class com.katesproject.stinkie.BackgroundSound { <init>(...); }
+
+# view AndroidManifest.xml #generated:54
+-keep class com.katesproject.stinkie.BathroomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.katesproject.stinkie.BedroomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.katesproject.stinkie.ComputerroomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:88
+-keep class com.katesproject.stinkie.DressingroomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:64
+-keep class com.katesproject.stinkie.GameroomActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:96
+-keep class com.katesproject.stinkie.HelpActivity { <init>(...); }
+
+# view large-v4\res/layout-large-v4/bathroom.xml #generated:64
+# view large-v4\res/layout-large-v4/bedroom.xml #generated:72
+# view large-v4\res/layout-large-v4/computerroom.xml #generated:112
+# view large-v4\res/layout-large-v4/gameroom.xml #generated:18
+# view large-v4\res/layout-large-v4/kitchen.xml #generated:75
+# view large-v4\res/layout-large-v4/lobby.xml #generated:27
+# view large-v4\res/layout-large-v4/street.xml #generated:42
+# view large-v4\res/layout-large-v4/weardrobe.xml #generated:55
+# view res/layout/bathroom.xml #generated:65
+# view res/layout/bedroom.xml #generated:73
+# view res/layout/computerroom.xml #generated:89
+# view res/layout/gameroom.xml #generated:18
+# view res/layout/kitchen.xml #generated:77
+# view res/layout/lobby.xml #generated:30
+# view res/layout/street.xml #generated:42
+# view res/layout/weardrobe.xml #generated:55
+# view small-v4\res/layout-small-v4/bathroom.xml #generated:67
+# view small-v4\res/layout-small-v4/bedroom.xml #generated:75
+# view small-v4\res/layout-small-v4/computerroom.xml #generated:112
+# view small-v4\res/layout-small-v4/gameroom.xml #generated:18
+# view small-v4\res/layout-small-v4/kitchen.xml #generated:75
+# view small-v4\res/layout-small-v4/lobby.xml #generated:25
+# view small-v4\res/layout-small-v4/street.xml #generated:42
+# view small-v4\res/layout-small-v4/weardrobe.xml #generated:52
+# view xlarge-v4\res/layout-xlarge-v4/bathroom.xml #generated:67
+# view xlarge-v4\res/layout-xlarge-v4/bedroom.xml #generated:70
+# view xlarge-v4\res/layout-xlarge-v4/computerroom.xml #generated:114
+# view xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:18
+# view xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:75
+# view xlarge-v4\res/layout-xlarge-v4/lobby.xml #generated:27
+# view xlarge-v4\res/layout-xlarge-v4/street.xml #generated:42
+# view xlarge-v4\res/layout-xlarge-v4/weardrobe.xml #generated:53
+-keep class com.katesproject.stinkie.IndicatsFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:49
+-keep class com.katesproject.stinkie.KitchenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:84
+-keep class com.katesproject.stinkie.LinesActivityMain { <init>(...); }
+
+# view large-v4\res/layout-large-v4/lines_last.xml #generated:8
+# view res/layout/lines_last.xml #generated:8
+# view small-v4\res/layout-small-v4/lines_last.xml #generated:8
+# view xlarge-v4\res/layout-xlarge-v4/lines_last.xml #generated:8
+-keep class com.katesproject.stinkie.LinesView { <init>(...); }
+
+# view AndroidManifest.xml #generated:79
+-keep class com.katesproject.stinkie.LobbyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:44
+-keep class com.katesproject.stinkie.MainMenuActivity { <init>(...); }
+
+# view large-v4\res/layout-large-v4/bathroom.xml #generated:70
+# view large-v4\res/layout-large-v4/bedroom.xml #generated:78
+# view large-v4\res/layout-large-v4/computerroom.xml #generated:118
+# view large-v4\res/layout-large-v4/dressingroom.xml #generated:136
+# view large-v4\res/layout-large-v4/gameroom.xml #generated:26
+# view large-v4\res/layout-large-v4/kitchen.xml #generated:85
+# view large-v4\res/layout-large-v4/lobby.xml #generated:33
+# view large-v4\res/layout-large-v4/street.xml #generated:47
+# view large-v4\res/layout-large-v4/weardrobe.xml #generated:61
+# view res/layout/bathroom.xml #generated:71
+# view res/layout/bedroom.xml #generated:79
+# view res/layout/computerroom.xml #generated:95
+# view res/layout/dressingroom.xml #generated:138
+# view res/layout/gameroom.xml #generated:26
+# view res/layout/kitchen.xml #generated:87
+# view res/layout/lobby.xml #generated:36
+# view res/layout/street.xml #generated:47
+# view res/layout/weardrobe.xml #generated:61
+# view small-v4\res/layout-small-v4/bathroom.xml #generated:73
+# view small-v4\res/layout-small-v4/bedroom.xml #generated:81
+# view small-v4\res/layout-small-v4/computerroom.xml #generated:118
+# view small-v4\res/layout-small-v4/dressingroom.xml #generated:139
+# view small-v4\res/layout-small-v4/gameroom.xml #generated:26
+# view small-v4\res/layout-small-v4/kitchen.xml #generated:85
+# view small-v4\res/layout-small-v4/lobby.xml #generated:31
+# view small-v4\res/layout-small-v4/street.xml #generated:47
+# view small-v4\res/layout-small-v4/weardrobe.xml #generated:58
+# view xlarge-v4\res/layout-xlarge-v4/bathroom.xml #generated:73
+# view xlarge-v4\res/layout-xlarge-v4/bedroom.xml #generated:76
+# view xlarge-v4\res/layout-xlarge-v4/computerroom.xml #generated:120
+# view xlarge-v4\res/layout-xlarge-v4/dressingroom.xml #generated:137
+# view xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:26
+# view xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:83
+# view xlarge-v4\res/layout-xlarge-v4/lobby.xml #generated:33
+# view xlarge-v4\res/layout-xlarge-v4/street.xml #generated:47
+# view xlarge-v4\res/layout-xlarge-v4/weardrobe.xml #generated:59
+-keep class com.katesproject.stinkie.MoneyFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:118
+-keep class com.katesproject.stinkie.NotifyService { <init>(...); }
+
+# view AndroidManifest.xml #generated:24
+-keep class com.katesproject.stinkie.Receiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:33
+-keep class com.katesproject.stinkie.SplashScreen { <init>(...); }
+
+# view AndroidManifest.xml #generated:69
+-keep class com.katesproject.stinkie.StreetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:114
+-keep class com.katesproject.stinkie.TimerService { <init>(...); }
+
+# view large-v4\res/layout-large-v4/gameroom.xml #generated:9
+# view large-v4\res/layout-large-v4/waxboard_main.xml #generated:2
+# view res/layout/gameroom.xml #generated:9
+# view res/layout/waxboard_main.xml #generated:2
+# view small-v4\res/layout-small-v4/gameroom.xml #generated:9
+# view small-v4\res/layout-small-v4/waxboard_main.xml #generated:2
+# view xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:9
+# view xlarge-v4\res/layout-xlarge-v4/waxboard_main.xml #generated:2
+-keep class com.katesproject.stinkie.WaxboardView { <init>(...); }
+
+# view AndroidManifest.xml #generated:74
+-keep class com.katesproject.stinkie.WeardrobeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:108
+-keep class com.vk.sdk.VKOpenAuthActivity { <init>(...); }
+
+# onClick large-v4\res/layout-large-v4/lines_last.xml #generated:37
+# onClick res/layout/lines_last.xml #generated:37
+# onClick small-v4\res/layout-small-v4/lines_last.xml #generated:38
+# onClick xlarge-v4\res/layout-xlarge-v4/lines_last.xml #generated:38
+-keepclassmembers class * { *** backgame(...); }
+
+# onClick large-v4\res/layout-large-v4/bathroom.xml #generated:56
+# onClick res/layout/bathroom.xml #generated:57
+# onClick small-v4\res/layout-small-v4/bathroom.xml #generated:59
+# onClick xlarge-v4\res/layout-xlarge-v4/bathroom.xml #generated:58
+-keepclassmembers class * { *** brushtooth(...); }
+
+# onClick large-v4\res/layout-large-v4/gameroom.xml #generated:101
+# onClick res/layout/gameroom.xml #generated:101
+# onClick small-v4\res/layout-small-v4/gameroom.xml #generated:73
+# onClick xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:100
+-keepclassmembers class * { *** carstup(...); }
+
+# onClick large-v4\res/layout-large-v4/street.xml #generated:53
+# onClick res/layout/street.xml #generated:53
+# onClick small-v4\res/layout-small-v4/street.xml #generated:53
+# onClick xlarge-v4\res/layout-xlarge-v4/street.xml #generated:53
+-keepclassmembers class * { *** eatfallapple(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:54
+# onClick res/layout/mainmenu.xml #generated:58
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:54
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:54
+-keepclassmembers class * { *** exitWormy(...); }
+
+# onClick large-v4\res/layout-large-v4/street.xml #generated:23
+# onClick res/layout/street.xml #generated:23
+# onClick small-v4\res/layout-small-v4/street.xml #generated:23
+# onClick xlarge-v4\res/layout-xlarge-v4/street.xml #generated:23
+-keepclassmembers class * { *** fallingleaves(...); }
+
+# onClick large-v4\res/layout-large-v4/street.xml #generated:10
+# onClick res/layout/street.xml #generated:10
+# onClick small-v4\res/layout-small-v4/street.xml #generated:10
+# onClick xlarge-v4\res/layout-xlarge-v4/street.xml #generated:10
+-keepclassmembers class * { *** godownfromstreet(...); }
+
+# onClick large-v4\res/layout-large-v4/bathroom.xml #generated:20
+# onClick res/layout/bathroom.xml #generated:20
+# onClick small-v4\res/layout-small-v4/bathroom.xml #generated:20
+# onClick xlarge-v4\res/layout-xlarge-v4/bathroom.xml #generated:20
+-keepclassmembers class * { *** goleftfrombathroom(...); }
+
+# onClick large-v4\res/layout-large-v4/bedroom.xml #generated:45
+# onClick res/layout/bedroom.xml #generated:46
+# onClick small-v4\res/layout-small-v4/bedroom.xml #generated:48
+# onClick xlarge-v4\res/layout-xlarge-v4/bedroom.xml #generated:44
+-keepclassmembers class * { *** goleftfrombedroom(...); }
+
+# onClick large-v4\res/layout-large-v4/computerroom.xml #generated:123
+# onClick res/layout/computerroom.xml #generated:100
+# onClick small-v4\res/layout-small-v4/computerroom.xml #generated:123
+# onClick xlarge-v4\res/layout-xlarge-v4/computerroom.xml #generated:125
+-keepclassmembers class * { *** goleftfromcomputerroom(...); }
+
+# onClick large-v4\res/layout-large-v4/gameroom.xml #generated:73
+# onClick res/layout/gameroom.xml #generated:73
+# onClick small-v4\res/layout-small-v4/gameroom.xml #generated:80
+# onClick xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:73
+-keepclassmembers class * { *** goleftfromgameroom(...); }
+
+# onClick large-v4\res/layout-large-v4/lobby.xml #generated:56
+# onClick res/layout/lobby.xml #generated:59
+# onClick small-v4\res/layout-small-v4/lobby.xml #generated:53
+# onClick xlarge-v4\res/layout-xlarge-v4/lobby.xml #generated:56
+-keepclassmembers class * { *** goleftfromintro(...); }
+
+# onClick large-v4\res/layout-large-v4/kitchen.xml #generated:37
+# onClick res/layout/kitchen.xml #generated:40
+# onClick small-v4\res/layout-small-v4/kitchen.xml #generated:38
+# onClick xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:38
+-keepclassmembers class * { *** goleftfromkitch(...); }
+
+# onClick large-v4\res/layout-large-v4/weardrobe.xml #generated:36
+# onClick res/layout/weardrobe.xml #generated:36
+# onClick small-v4\res/layout-small-v4/weardrobe.xml #generated:33
+# onClick xlarge-v4\res/layout-xlarge-v4/weardrobe.xml #generated:34
+-keepclassmembers class * { *** goleftfromweardrobe(...); }
+
+# onClick large-v4\res/layout-large-v4/bathroom.xml #generated:32
+# onClick res/layout/bathroom.xml #generated:32
+# onClick small-v4\res/layout-small-v4/bathroom.xml #generated:32
+# onClick xlarge-v4\res/layout-xlarge-v4/bathroom.xml #generated:32
+-keepclassmembers class * { *** gorightfrombathroom(...); }
+
+# onClick large-v4\res/layout-large-v4/bedroom.xml #generated:34
+# onClick res/layout/bedroom.xml #generated:35
+# onClick small-v4\res/layout-small-v4/bedroom.xml #generated:37
+# onClick xlarge-v4\res/layout-xlarge-v4/bedroom.xml #generated:33
+-keepclassmembers class * { *** gorightfrombedroom(...); }
+
+# onClick large-v4\res/layout-large-v4/computerroom.xml #generated:135
+# onClick res/layout/computerroom.xml #generated:112
+# onClick small-v4\res/layout-small-v4/computerroom.xml #generated:135
+# onClick xlarge-v4\res/layout-xlarge-v4/computerroom.xml #generated:137
+-keepclassmembers class * { *** gorightfromcomputerroom(...); }
+
+# onClick large-v4\res/layout-large-v4/gameroom.xml #generated:84
+# onClick res/layout/gameroom.xml #generated:84
+# onClick small-v4\res/layout-small-v4/gameroom.xml #generated:91
+# onClick xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:84
+-keepclassmembers class * { *** gorightfromgameroom(...); }
+
+# onClick large-v4\res/layout-large-v4/lobby.xml #generated:68
+# onClick res/layout/lobby.xml #generated:71
+# onClick small-v4\res/layout-small-v4/lobby.xml #generated:65
+# onClick xlarge-v4\res/layout-xlarge-v4/lobby.xml #generated:68
+-keepclassmembers class * { *** gorightfromintro(...); }
+
+# onClick large-v4\res/layout-large-v4/kitchen.xml #generated:49
+# onClick res/layout/kitchen.xml #generated:52
+# onClick small-v4\res/layout-small-v4/kitchen.xml #generated:50
+# onClick xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:50
+-keepclassmembers class * { *** gorightfromkitch(...); }
+
+# onClick large-v4\res/layout-large-v4/weardrobe.xml #generated:68
+# onClick res/layout/weardrobe.xml #generated:68
+# onClick small-v4\res/layout-small-v4/weardrobe.xml #generated:65
+# onClick xlarge-v4\res/layout-xlarge-v4/weardrobe.xml #generated:66
+-keepclassmembers class * { *** gorightfromweardrobe(...); }
+
+# onClick large-v4\res/layout-large-v4/street.xml #generated:71
+# onClick res/layout/street.xml #generated:71
+# onClick small-v4\res/layout-small-v4/street.xml #generated:71
+# onClick xlarge-v4\res/layout-xlarge-v4/street.xml #generated:71
+-keepclassmembers class * { *** gosquir(...); }
+
+# onClick large-v4\res/layout-large-v4/bathroom.xml #generated:10
+# onClick res/layout/bathroom.xml #generated:10
+# onClick small-v4\res/layout-small-v4/bathroom.xml #generated:10
+# onClick xlarge-v4\res/layout-xlarge-v4/bathroom.xml #generated:10
+-keepclassmembers class * { *** gotoilet(...); }
+
+# onClick large-v4\res/layout-large-v4/lobby.xml #generated:39
+# onClick res/layout/lobby.xml #generated:42
+# onClick small-v4\res/layout-small-v4/lobby.xml #generated:37
+# onClick xlarge-v4\res/layout-xlarge-v4/lobby.xml #generated:39
+-keepclassmembers class * { *** goupfromintro(...); }
+
+# onClick large-v4\res/layout-large-v4/bedroom.xml #generated:26
+# onClick res/layout/bedroom.xml #generated:27
+# onClick small-v4\res/layout-small-v4/bedroom.xml #generated:27
+# onClick xlarge-v4\res/layout-xlarge-v4/bedroom.xml #generated:25
+-keepclassmembers class * { *** hackSafe(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:64
+# onClick res/layout/mainmenu.xml #generated:68
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:64
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:64
+-keepclassmembers class * { *** hiuser(...); }
+
+# onClick large-v4\res/layout-large-v4/kitchen.xml #generated:101
+# onClick res/layout/kitchen.xml #generated:103
+# onClick small-v4\res/layout-small-v4/kitchen.xml #generated:101
+# onClick xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:99
+-keepclassmembers class * { *** leftfood(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:86
+# onClick res/layout/mainmenu.xml #generated:89
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:86
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:87
+-keepclassmembers class * { *** nameUser(...); }
+
+# onClick large-v4\res/layout-large-v4/splash_layout.xml #generated:1
+# onClick res/layout/splash_layout.xml #generated:1
+# onClick small-v4\res/layout-small-v4/splash_layout.xml #generated:1
+# onClick xlarge-v4\res/layout-xlarge-v4/splash_layout.xml #generated:1
+-keepclassmembers class * { *** onPbButton(...); }
+
+# onClick large-v4\res/layout-large-v4/gameroom.xml #generated:50
+# onClick res/layout/gameroom.xml #generated:51
+# onClick small-v4\res/layout-small-v4/gameroom.xml #generated:50
+# onClick xlarge-v4\res/layout-xlarge-v4/gameroom.xml #generated:50
+-keepclassmembers class * { *** playLines(...); }
+
+# onClick large-v4\res/layout-large-v4/kitchen.xml #generated:111
+# onClick res/layout/kitchen.xml #generated:113
+# onClick small-v4\res/layout-small-v4/kitchen.xml #generated:111
+# onClick xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:109
+-keepclassmembers class * { *** rightfood(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:43
+# onClick res/layout/mainmenu.xml #generated:47
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:43
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:43
+-keepclassmembers class * { *** sa(...); }
+
+# onClick large-v4\res/layout-large-v4/street.xml #generated:79
+# onClick res/layout/street.xml #generated:79
+# onClick small-v4\res/layout-small-v4/street.xml #generated:80
+# onClick xlarge-v4\res/layout-xlarge-v4/street.xml #generated:80
+-keepclassmembers class * { *** startFrog(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:23
+# onClick res/layout/mainmenu.xml #generated:25
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:23
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:23
+-keepclassmembers class * { *** toabout(...); }
+
+# onClick large-v4\res/layout-large-v4/weardrobe.xml #generated:16
+# onClick res/layout/weardrobe.xml #generated:16
+# onClick small-v4\res/layout-small-v4/weardrobe.xml #generated:16
+# onClick xlarge-v4\res/layout-xlarge-v4/weardrobe.xml #generated:16
+-keepclassmembers class * { *** todressingroom(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:33
+# onClick res/layout/mainmenu.xml #generated:36
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:33
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:33
+-keepclassmembers class * { *** tohelp(...); }
+
+# onClick large-v4\res/layout-large-v4/mainmenu.xml #generated:13
+# onClick res/layout/mainmenu.xml #generated:13
+# onClick small-v4\res/layout-small-v4/mainmenu.xml #generated:13
+# onClick xlarge-v4\res/layout-xlarge-v4/mainmenu.xml #generated:13
+-keepclassmembers class * { *** tolobby(...); }
+
+# onClick large-v4\res/layout-large-v4/bedroom.xml #generated:57
+# onClick res/layout/bedroom.xml #generated:58
+# onClick small-v4\res/layout-small-v4/bedroom.xml #generated:60
+# onClick xlarge-v4\res/layout-xlarge-v4/bedroom.xml #generated:56
+-keepclassmembers class * { *** tosleep(...); }
+
+# onClick large-v4\res/layout-large-v4/dressingroom.xml #generated:123
+# onClick res/layout/dressingroom.xml #generated:126
+# onClick small-v4\res/layout-small-v4/dressingroom.xml #generated:127
+# onClick xlarge-v4\res/layout-xlarge-v4/dressingroom.xml #generated:124
+-keepclassmembers class * { *** toweardrobed(...); }
+
+# onClick large-v4\res/layout-large-v4/kitchen.xml #generated:27
+# onClick res/layout/kitchen.xml #generated:28
+# onClick small-v4\res/layout-small-v4/kitchen.xml #generated:28
+# onClick xlarge-v4\res/layout-xlarge-v4/kitchen.xml #generated:28
+-keepclassmembers class * { *** wanttoeat(...); }
+
+# onClick large-v4\res/layout-large-v4/dressingroom.xml #generated:107
+# onClick res/layout/dressingroom.xml #generated:108
+# onClick small-v4\res/layout-small-v4/dressingroom.xml #generated:108
+# onClick xlarge-v4\res/layout-xlarge-v4/dressingroom.xml #generated:107
+-keepclassmembers class * { *** wearlistl(...); }
+
+# onClick large-v4\res/layout-large-v4/dressingroom.xml #generated:115
+# onClick res/layout/dressingroom.xml #generated:118
+# onClick small-v4\res/layout-small-v4/dressingroom.xml #generated:118
+# onClick xlarge-v4\res/layout-xlarge-v4/dressingroom.xml #generated:116
+-keepclassmembers class * { *** wearlistr(...); }
+

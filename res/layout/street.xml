@@ -1,0 +1,87 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmenu"
+    android:gravity="top"
+     android:id="@+id/street"
+    tools:context="${relativePackage}.${activityClass}" >
+
+ <Button
+     android:id="@+id/rights"
+     android:layout_width="120dp"
+     android:layout_height="80dp"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true"
+     android:onClick="godownfromstreet"
+     android:scaleX="0.5"
+     android:scaleY="0.5"
+     android:scrollX="5dp"
+     android:scrollY="5dp"
+     android:background="@drawable/downp" />
+
+    <ImageView
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:id="@+id/tree1" 
+            android:src="@drawable/tree1"
+            android:onClick="fallingleaves"
+            android:clickable="false"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@+id/rights"/>
+
+
+
+    <ImageView android:layout_width="120dp"
+               android:layout_height="220dp"
+               android:id="@+id/stinkieStreet"
+               android:src="@drawable/stinkie"
+               android:layout_alignTop="@+id/apple" android:layout_alignRight="@+id/wordsrr1"
+               android:layout_alignEnd="@+id/wordsrr1"/>
+
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:name="com.katesproject.stinkie.IndicatsFragment" android:id="@+id/fragment3"
+              tools:layout="@layout/indicatsfrag_layout" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+    <fragment android:layout_width="120dp"
+              android:layout_height="70dp"
+              android:name="com.katesproject.stinkie.MoneyFragment" android:id="@+id/fragment2"
+              tools:layout="@layout/moneyfrag" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+     <ImageView
+         android:id="@+id/apple"
+         android:layout_width="50dp"
+         android:layout_height="50dp"
+         android:clickable="false"
+         android:onClick="eatfallapple"
+         android:src="@drawable/apple"
+         android:visibility="visible"
+         android:layout_centerVertical="true" android:layout_toRightOf="@+id/frog" android:layout_toEndOf="@+id/frog"/>
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:id="@+id/wordsrr1"
+            android:src="@drawable/wordsrr1"
+            android:visibility="visible"
+            android:layout_alignBottom="@+id/apple" android:layout_toLeftOf="@+id/tree1"
+            android:layout_toStartOf="@+id/tree1"/>
+
+    <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/squirrel"
+            android:id="@+id/squirrel"
+            android:onClick="gosquir"
+            android:layout_alignRight="@+id/tree1" android:layout_above="@+id/rights"/>
+
+    <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/frog"
+            android:onClick="startFrog"
+            android:id="@+id/frog"
+            android:layout_above="@+id/squirrel" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

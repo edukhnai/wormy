@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/mainmenu"
+                android:id="@+id/mainmenu"
+    android:gravity="top"
+                android:clickable="true"
+    tools:context="${relativePackage}.${activityClass}" >
+
+
+    <Button
+        android:id="@+id/play"
+        android:layout_width="200dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="143dp"
+        android:background="@drawable/playruss"
+        android:clickable="true"
+        android:onClick="tolobby"
+        android:contentDescription="@+id/play" />
+
+    <Button
+        android:id="@+id/about"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/play"
+        android:onClick="toabout"
+        android:clickable="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@+id/options"
+        android:background="@drawable/aboutruss" />
+
+    <Button
+        android:id="@+id/help"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/about"
+        android:onClick="tohelp"
+        android:clickable="true"
+        android:layout_below="@+id/about"
+        android:contentDescription="@+id/help"
+        android:background="@drawable/helpruss" />
+
+    <Button
+            android:id="@+id/achiv"
+            android:layout_width="140dp"
+            android:layout_height="60dp"
+            android:layout_alignLeft="@+id/help"
+            android:onClick="sa"
+            android:clickable="true"
+            android:layout_below="@+id/help"
+            android:contentDescription="@+id/achievements"
+            android:background="@drawable/achivrus" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:onClick="exitWormy"
+        android:clickable="true"
+        android:contentDescription="@+id/exit"
+        android:background="@drawable/exitruss" android:layout_below="@+id/achiv"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/russiangirl"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/about"
+        android:contentDescription="@+id/russiangirl"
+        android:onClick="hiuser"
+        android:src="@drawable/russiangirl" />
+    <TextView
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textSize="25sp"
+            android:textColor="#2E8B57"
+            android:text="@string/hallo"
+            android:id="@+id/textname"
+            android:gravity="center"
+            android:textStyle="bold|italic"
+            android:layout_above="@+id/addName" android:layout_centerHorizontal="true"/>
+
+    <TextView
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/player"
+            android:id="@+id/addName"
+            android:onClick="nameUser"
+            android:clickable="true"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="#228B22"
+            android:textStyle="bold|italic"
+            android:layout_above="@+id/hallo0" android:layout_centerHorizontal="true"/>
+    <ImageView
+            android:layout_width="110dp"
+            android:layout_height="100dp"
+            android:id="@+id/hallo0"
+            android:src="@drawable/wordsrr"
+            android:visibility="invisible"
+            android:layout_alignTop="@+id/play" android:layout_toRightOf="@+id/play" android:layout_toEndOf="@+id/play"
+            android:layout_marginTop="38dp"/>
+
+    <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminateDrawable="@drawable/round1"
+            android:indeterminateOnly="true"
+            android:id="@+id/flower3"
+            android:visibility="invisible"
+            android:layout_below="@+id/russiangirl" android:layout_alignLeft="@+id/hallo0"
+            android:layout_alignStart="@+id/hallo0"/>
+
+    <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:indeterminateDrawable="@drawable/round2"
+            android:indeterminateOnly="true"
+            android:id="@+id/flower1"
+            android:visibility="invisible"
+            android:layout_above="@+id/exit" android:layout_alignRight="@+id/flower2"
+            android:layout_alignEnd="@+id/flower2"/>
+
+    <ProgressBar
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:indeterminateDrawable="@drawable/round5"
+            android:indeterminateOnly="true"
+            android:id="@+id/flower2"
+            android:visibility="invisible"
+            android:layout_above="@+id/notifyCheck" android:layout_toLeftOf="@+id/play"
+            android:layout_toStartOf="@+id/play"/>
+    <CheckBox
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:text="@string/notifcheck"
+            android:textColor="#556B2F"
+            android:id="@+id/notifyCheck"
+            android:checked="true"
+            android:textSize="13sp" android:layout_alignParentBottom="true" android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+
+</RelativeLayout>

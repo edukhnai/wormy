@@ -1,0 +1,115 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                android:layout_width="match_parent"
+                android:background="@drawable/rushelp"
+                android:id="@+id/about"
+                android:layout_height="match_parent">
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imageView2"
+            android:src="@drawable/imgfgpcircle"
+            android:layout_marginTop="40dp" android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:textSize="37sp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/app_name"
+            android:id="@+id/nameimgfgp"
+            android:gravity="center" android:layout_below="@+id/imageView2" android:layout_alignLeft="@+id/textversion"
+            android:layout_alignStart="@+id/textversion"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/version"
+            android:textSize="30sp"
+            android:id="@+id/textversion"
+            android:textColor="#363636"
+            android:layout_below="@+id/nameimgfgp" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/ofsite"
+            android:id="@+id/textsite"
+            android:textSize="35sp"
+            android:layout_below="@+id/textversion" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/siteadress"
+            android:id="@+id/textsiteadress"
+            android:autoLink="web"
+            android:textSize="30sp"
+            android:linksClickable="true"
+            android:textColorLink="#EE2C2C"
+            android:layout_below="@+id/textsite" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/myachivs"
+            android:id="@+id/textauthor"
+            android:textSize="30sp"
+            android:layout_below="@+id/textsiteadress" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/me"
+            android:id="@+id/textView"
+            android:textSize="30sp"
+            android:textStyle="italic"
+            android:textColor="#363636"
+            android:layout_below="@+id/textauthor" android:layout_centerHorizontal="true"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/tanya"
+                android:id="@+id/tanya"
+                android:gravity="center"
+                android:layout_above="@+id/bell" android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" android:textSize="30sp"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/tanyaadress"
+                android:autoLink="web"
+                android:linksClickable="true"
+                android:textColorLink="#EE2C2C"
+                android:id="@+id/bell"
+                android:textStyle="italic"
+                android:textColor="#363636"
+                android:layout_above="@+id/textlida" android:layout_alignRight="@+id/textView"
+                android:layout_alignEnd="@+id/textView" android:layout_marginBottom="27dp" android:textSize="30sp"/>
+    <TextView
+            android:layout_width="600dp"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lida"
+            android:id="@+id/textlida"
+            android:textSize="30sp"
+            android:gravity="center"
+
+            android:layout_above="@+id/textlink" android:layout_centerHorizontal="true"/>
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/lidaadress"
+            android:id="@+id/textlink"
+            android:autoLink="web"
+            android:linksClickable="true"
+            android:textSize="30sp"
+            android:textColorLink="#EE2C2C"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="39dp"/>
+</RelativeLayout>

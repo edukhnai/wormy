@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bathroom"
+    android:gravity="top"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ImageView
+        android:id="@+id/toilet"
+        android:layout_width="170dp"
+        android:layout_height="270dp"
+        android:onClick="gotoilet"
+        android:src="@drawable/toilet"
+        android:layout_centerVertical="true" android:layout_toLeftOf="@+id/rights"
+        android:layout_toStartOf="@+id/rights"/>
+
+
+    <Button
+        android:id="@+id/lefts"
+        style="@style/AppTheme"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:scaleX="0.5"
+        android:scaleY="0.5"
+        android:onClick="goleftfrombathroom"
+        android:background="@drawable/leftsp"
+        android:layout_centerVertical="true" android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+            android:id="@+id/rights"
+            style="@style/AppTheme"
+            android:layout_width="120dp"
+            android:layout_height="180dp"
+            android:scaleX="0.5"
+            android:scaleY="0.5"
+            android:onClick="gorightfrombathroom"
+            android:background="@drawable/rightsp"
+            android:layout_alignTop="@+id/lefts" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    <ImageView
+        android:id="@+id/bathtowel"
+        android:layout_width="90dp"
+        android:layout_height="220dp"
+        android:src="@drawable/bathtowel"
+        android:layout_alignBottom="@+id/sink" android:layout_centerHorizontal="true"
+        android:layout_marginBottom="49dp"/>
+
+    <ImageView
+        android:id="@+id/bathmirror"
+        android:layout_width="200dp"
+        android:layout_height="250dp"
+        android:src="@drawable/bathmirror"
+        android:layout_above="@+id/sink" android:layout_toRightOf="@+id/lefts" android:layout_toEndOf="@+id/lefts"/>
+
+    <ImageView
+        android:id="@+id/sink"
+        android:layout_width="190dp"
+        android:layout_height="150dp"
+        android:onClick="brushtooth"
+        android:src="@drawable/sink"
+        android:layout_alignTop="@+id/toilet" android:layout_alignRight="@+id/bathmirror"
+        android:layout_alignEnd="@+id/bathmirror"/>
+
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:name="com.katesproject.stinkie.IndicatsFragment" android:id="@+id/fragment3"
+              tools:layout="@layout/indicatsfrag_layout" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+    <fragment android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:name="com.katesproject.stinkie.MoneyFragment" android:id="@+id/fragment2"
+              tools:layout="@layout/moneyfrag" android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"/>
+
+    <ImageView
+        android:id="@+id/bathcarpet"
+        android:layout_width="180dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bathcarpet"
+        android:layout_below="@+id/toilet" android:layout_alignLeft="@+id/sink" android:layout_alignStart="@+id/sink"/>
+
+    <ImageView
+        android:id="@+id/stinkieBathroom"
+        android:src="@drawable/stinkie"
+        android:layout_width="450dp"
+        android:layout_height="550dp"
+        android:layout_alignTop="@+id/rights" android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

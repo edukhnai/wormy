@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:background="@drawable/dressingroom"
+                android:layout_height="match_parent">
+
+    <ViewFlipper
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/dressflip"
+            android:layout_marginTop="19dp" android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/wearright" android:layout_toStartOf="@+id/wearright"
+            android:layout_marginRight="20dp" android:layout_marginEnd="20dp">
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkier" android:src="@drawable/stinkier"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie0" android:src="@drawable/stinkie0r"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie1" android:src="@drawable/stinkie1rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie2" android:src="@drawable/stinkie2rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie3" android:src="@drawable/stinkie3rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie4" android:src="@drawable/stinkie4rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie5" android:src="@drawable/stinkie5rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie6" android:src="@drawable/stinkie6rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie7" android:src="@drawable/stinkie7rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie8" android:src="@drawable/stinkie8rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie9" android:src="@drawable/stinkie9rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie10" android:src="@drawable/stinkie10rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie11" android:src="@drawable/stinkie11rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie12" android:src="@drawable/stinkie12rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie13" android:src="@drawable/stinkie13rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie14" android:src="@drawable/stinkie14rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie15" android:src="@drawable/stinkie15rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie16" android:src="@drawable/stinkie16rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie17" android:src="@drawable/stinkie17rm"/>
+           <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie18" android:src="@drawable/stinkie18rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie19" android:src="@drawable/stinkie19rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie20" android:src="@drawable/stinkie20rm"/>
+        <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/wearstinkie21" android:src="@drawable/stinkie21rm"/>
+    </ViewFlipper>
+
+    <Button
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/wearleft"
+            android:onClick="wearlistl"
+            android:background="@drawable/wearlefts"
+            android:layout_alignTop="@+id/wearright" android:layout_toLeftOf="@+id/dressflip"
+            android:layout_toStartOf="@+id/dressflip" android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"/>
+
+    <Button
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:id="@+id/wearright"
+            android:onClick="wearlistr"
+            android:background="@drawable/wearrights"
+            android:layout_alignBottom="@+id/dressflip" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" android:layout_marginRight="11dp" android:layout_marginEnd="11dp"
+            android:layout_marginBottom="9dp"/>
+    <Button
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView5"
+            android:background="@drawable/downp"
+            android:onClick="toweardrobed"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <ImageView android:layout_width="140dp"
+               android:layout_height="190dp"
+               android:id="@+id/stinkieDressingroom"
+               android:src="@drawable/stinkie"
+               android:layout_below="@+id/dressflip" android:layout_centerHorizontal="true"/>
+    <fragment android:layout_width="100dp"
+              android:layout_height="50dp"
+              android:name="com.katesproject.stinkie.MoneyFragment" android:id="@+id/fragment5"
+              android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+              android:layout_alignParentStart="true" tools:layout="@layout/moneyfrag"/>
+
+</RelativeLayout>
